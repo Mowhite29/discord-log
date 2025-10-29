@@ -1,0 +1,35 @@
+{
+  "name": "discord-logger",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Discord webhook logger for Node.js. Supports log levels, embeds, timestamps, and error stack traces for real-time monitoring.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mowhite29/discord-logger/"
+  },
+  "keywords": [
+    "discord",
+    "logger",
+    "logging",
+    "webhook",
+    "nodejs",
+    "error-handling",
+    "stack-trace",
+    "real-time",
+    "monitoring",
+    "embed"
+  ],
+  "author": "Moses White",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mowhite29/discord-logger/issues"
+  },
+  "homepage": "https://github.com/mowhite29/discord-logger#readme",
+  "packageManager": "npm@11.6.2",
+  "dependencies": {
+    "axios": "^1.13.1"
+  }
+}
