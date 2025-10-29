@@ -48,20 +48,3 @@ export default class DiscordLogger {
         return colours[level] || 0;
     }
 }
-
-function generateError() {
-    try {
-        // Deliberate error
-        const x = undefinedVariable + 1;
-    } catch (err) {
-        return err;
-    }
-}
-
-const logger = new DiscordLogger('https://discord.com/api/webhooks/1433054807890853928/NugFQftojcus4lz9NGoCfBU_HSABAN26ngmUpjxtR2VoqmtQdLbcYc3B4NLHo0vK2iQz')
-
-logger.log('Test log no tag')
-logger.log('test debug', 'deBug')
-logger.log('test warning', 'wARNING')
-logger.log('test critical', 'critical')
-logger.log('Test log error', 'error', generateError()) 
