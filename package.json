@@ -1,5 +1,5 @@
 {
-  "name": "discord-log",
+  "name": "discord-logging-handler",
   "version": "1.0.0",
   "type": "module",
   "description": "Discord webhook logger for Node.js. Supports log levels, embeds, timestamps, and error stack traces for real-time monitoring.",
@@ -7,7 +7,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mowhite29/discord-log.git"
+    "url": "git+https://github.com/mowhite29/discord-logging-handler-js.git"
   },
   "keywords": [
     "discord",
@@ -24,9 +24,9 @@
   "author": "Moses White",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mowhite29/discord-log/issues"
+    "url": "https://github.com/mowhite29/discord-logging-handler-js/issues"
   },
-  "homepage": "https://github.com/mowhite29/discord-log#readme",
+  "homepage": "https://github.com/mowhite29/discord-logging-handler-js#readme",
   "packageManager": "npm@11.6.2",
   "dependencies": {
     "axios": "^1.13.1"

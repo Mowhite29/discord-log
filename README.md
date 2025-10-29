@@ -1,21 +1,21 @@
-# Discord Log
+# Discord Logging Handler
 
-[![npm version](https://img.shields.io/npm/v/discord-log)](https://www.npmjs.com/package/discord-log)
-[![License](https://img.shields.io/npm/l/discord-log)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/log-to-discord)](https://www.npmjs.com/package/log-to-discord)
+[![License](https://img.shields.io/npm/l/log-to-discord)](LICENSE)
 
 A Node.js logging handler that sends application logs to Discord channels via webhooks, with color-coded embeds, timestamps, and stack traces.
 
 ## Installation
 
 ```bash
-npm install discord-log
+npm install discord-logging-handler
 
 ```
 
 ## Usage
 
 ```bash
-import DiscordLog from 'discord-log'
+import DiscordLog from 'discord-logging-handler'
 
 const logger = new DiscordLog('YOUR_WEBHOOK_URL', 'DEBUG')
 
