@@ -15,16 +15,16 @@ npm install discord-logger
 ## Usage
 
 ```bash
-import DiscordLogger from 'discord-logging-handler-js';
+import DiscordLogger from 'discord-logging-handler-js'
 
-const logger = new DiscordLogger('YOUR_WEBHOOK_URL', 'DEBUG');
+const logger = new DiscordLogger('YOUR_WEBHOOK_URL', 'DEBUG')
 
-logger.log('This is an INFO log', 'INFO');
+logger.log('This is an INFO log', 'INFO')
 
 try {
-    throw new Error('Sample error');
+    throw new Error('Sample error')
 } catch (err) {
-    logger.log('Caught an error', 'ERROR', err);
+    logger.log('Caught an error', 'ERROR', err)
 }
 ```
 
