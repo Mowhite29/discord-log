@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default class DiscordLogger {
+export default class DiscordLog {
     constructor(webhookURL, level = 'Error') {
         if (!webhookURL) throw Error('webhookURL is required');
         this.webhookURL = webhookURL;
