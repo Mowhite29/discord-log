@@ -1,9 +1,18 @@
 # Discord Logging Handler
 
-[![npm version](https://img.shields.io/npm/v/log-to-discord)](https://www.npmjs.com/package/log-to-discord)
-[![License](https://img.shields.io/npm/l/log-to-discord)](LICENSE)
+[![npm downloads](https://img.shields.io/npm/dt/discord-logging-handler)](https://www.npmjs.com/package/discord-logging-handler)
+[![npm version](https://img.shields.io/npm/v/discord-logging-handler)](https://www.npmjs.com/package/discord-logging-handler)
+[![License](https://img.shields.io/npm/l/discord-logging-handler)](LICENSE)
 
-A Node.js logging handler that sends application logs to Discord channels via webhooks, with color-coded embeds, timestamps, and stack traces.
+A lightweight Node.js logging handler that sends application logs to Discord channels via webhooks, with color-coded embeds, timestamps, and stack traces.
+
+## Features
+
+- Color-coded embeds by log level
+- Supports full stack traces for errors and exceptions
+- Configurable minimum log level
+- Async, non-blocking log delivery
+- Simple drop-in integration for any Node.js project
 
 ## Installation
 
@@ -14,7 +23,29 @@ npm install discord-logging-handler
 
 ## Usage
 
-```bash
+Initialise the logger with:
+
+```javascript
+import DiscordLog from 'discord-logging-handler';
+
+const logger = new DiscordLog('WEBHOOKURL', 'LEVEL')
+```
+
+- `WEBHOOKURL`: Your webhook from Discord Integrations. Use `DEV` to enable development mode (logs are supressed during builds/tests).
+- `LEVEL` (optional): The minimum level that should trigger logs to be sent to Discord. Defaults to `'ERROR'`.
+
+Send logs with:
+
+```javascript
+logInstance.log('Message', 'LEVEL', error)
+```
+
+- `LEVEL` (optional): Log severity- `'DEBUG'`, `'INFO'`, `'WARNING'`, `'ERROR'`, `'CRITICAL'`. Defaults to `'INFO'`.
+- `error` (optional): An `Error` object or exception to include in the log. Defaults to null.
+
+### Example
+
+```javascript
 import DiscordLog from 'discord-logging-handler'
 
 const logger = new DiscordLog('YOUR_WEBHOOK_URL', 'DEBUG')
@@ -24,16 +55,20 @@ logger.log('This is an INFO log', 'INFO')
 try {
     throw new Error('Sample error')
 } catch (err) {
-    logger.log('Caught an error', 'ERROR', err)
+    logger.log('An error occurred', 'ERROR', err)
 }
 ```
 
-## Features
+## Discord Webhook Setup
 
-- Color-coded embeds by log level
-- Supports stack traces
-- Configurable minimum log level
-- Async, non-blocking log delivery
+Discord allows webhooks to be created via **Server Settings &rarr; Integrations**.
+
+1. Go to **Server Settings &rarr; Integrations**
+2. Under **Webhooks**, click **New Webhook**
+3. Copy the generated webhook URL
+
+![server settings](./assets/images/discord-logging-js-1.png)
+![webhooks](./assets/images/discord-logging-js-2.png)
 
 ## License
 
