@@ -9,6 +9,7 @@ export default class DiscordLog {
     }
 
     async log(message, level = 'INFO', error = null){
+        if (this.webhookURL.toUpperCase() === 'Dev') return // Development mode to catch calls
         const levelUpper = level.toUpperCase();
 
         if (this.levels.indexOf(levelUpper) < this.levels.indexOf(this.level)) return;
