@@ -8,7 +8,7 @@ A lightweight Node.js logging handler that sends application logs to Discord cha
 
 ## Features
 
-- Color-coded embeds by log level
+- Colour-coded embeds by log level
 - Supports full stack traces for errors and exceptions
 - Configurable minimum log level
 - Async, non-blocking log delivery
@@ -31,7 +31,7 @@ import DiscordLog from 'discord-logging-handler';
 const logger = new DiscordLog('WEBHOOKURL', 'LEVEL')
 ```
 
-- `WEBHOOKURL`: Your webhook from Discord Integrations. Use `DEV` to enable development mode (logs are supressed during builds/tests).
+- `WEBHOOKURL`: Your webhook from Discord Integrations. Use `DEV` to enable development mode (logs are suppressed during builds/tests).
 - `LEVEL` (optional): The minimum level that should trigger logs to be sent to Discord. Defaults to `'ERROR'`.
 
 Send logs with:
@@ -69,6 +69,15 @@ Discord allows webhooks to be created via **Server Settings &rarr; Integrations*
 
 ![server settings](./assets/images/discord-logging-js-1.png)
 ![webhooks](./assets/images/discord-logging-js-2.png)
+
+## Changelog
+
+See the full [Changelog](./CHANGELOG.md) for details on version history.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to open an issue or submit a pull request on [GitHub](https://github.com/mowhite29/discord-logging-handler-js).
 
 ## License
 
