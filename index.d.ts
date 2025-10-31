@@ -3,11 +3,11 @@ declare module 'discord-logging-handler' {
 
     export interface DiscordLogOptions {
         level?: LogLevel;
-        dev_mode?: boolean;
     }
 
     export default class DiscordLog {
         constructor(webhookURL: string, options?: DiscordLogOptions);
+        constructor(webhookURL: string, level?: LogLevel)
         log(message: string, level?: LogLevel, error?: Error): void;
     }
 }

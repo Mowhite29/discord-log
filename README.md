@@ -25,6 +25,16 @@ npm install discord-logging-handler
 
 Initialise the logger with:
 
+### Object style (Typescript / Recommended)
+
+```javascript
+import DiscordLog from 'discord-logging-handler';
+
+const logger = new DiscordLog('WEBHOOKURL', { level: 'LEVEL' })
+```
+
+Legacy style (Javascript)
+
 ```javascript
 import DiscordLog from 'discord-logging-handler';
 

@@ -19,3 +19,9 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - Minor typo fixes in README.
+
+## [1.2.2] - 2015-10-31
+
+### Added
+
+- Typescript type declarations now support legacy syntax too.
