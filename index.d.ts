@@ -8,6 +8,6 @@ declare module 'discord-logging-handler' {
     export default class DiscordLog {
         constructor(webhookURL: string, options?: DiscordLogOptions);
         constructor(webhookURL: string, level?: LogLevel)
-        log(message: string, level?: LogLevel, error?: Error): void;
+        log(message: string, level?: LogLevel, error?: unknown): void;
     }
 }

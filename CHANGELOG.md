@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.1.0] - 2015-10-30
+## [1.1.0] - 2025-10-30
 
 ### Added
 
@@ -10,7 +10,7 @@ All notable changes to this project will be documented in this file.
 - Updated README with usage, examples and instructions for Discord webhook configuration.
 - Badge updates to reflect npm downloads, version and license.
 
-## [1.2.1] - 2015-10-31
+## [1.2.1] - 2025-10-31
 
 ### Added
 
@@ -20,8 +20,20 @@ All notable changes to this project will be documented in this file.
 
 - Minor typo fixes in README.
 
-## [1.2.2] - 2015-10-31
+## [1.2.2] - 2025-10-31
 
 ### Added
 
 - Typescript type declarations now support legacy syntax too.
+
+## [1.2.3] - 2025-10-31
+
+### Fixed
+
+- Handling of options when Typescript object style is used.
+
+## [1.2.4] - 2025-10-31
+
+### Added
+
+- Handling of non-standard errors such as strings, variables and objects.

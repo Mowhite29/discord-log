@@ -1,6 +1,6 @@
 {
   "name": "discord-logging-handler",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "type": "module",
   "description": "Discord webhook logger for Node.js. Supports log levels, embeds, timestamps, and error stack traces for real-time monitoring.",
   "main": "index.js",
